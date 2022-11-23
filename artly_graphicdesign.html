@@ -74,25 +74,22 @@
                  margin-top: 5%;
             }
 	    #artist1{
-		 
-		display: flex;
-		    justify-content: center;
-		    align-items: center;
-            }
+		column-count: 3;
+		padding-left: 15%;
+		padding-right: 15%;
+		  }
 	    #artist2{
-		   
-		display: flex;
-		    justify-content: center;
-		    align-items: center;
+		column-count: 3;
+		padding-left: 15%;
+		padding-right: 15%;
             }
 	    #artist3{
-		   display: flex;
-		    justify-content: center;
-		    align-items: center;
-
+		column-count: 3;
+		padding-left: 15%;
+		padding-right: 15%;
             }
-	    img{
-		    width:200px;
+	    .gallery{
+		    width:100%;
 		  }
 	    #copyright{
 		font-size: 8pt;
@@ -105,9 +102,34 @@
             	margin-top: 5%;
         	}
 
-	     @media-screen and (max-width: 800px){
+	      @media screen and (max-width: 800px){
+			h3{
+				text-align: center;
+			 }
+			#artist1{
+				column-count: 2;
+			 }
+			#artist2{
+				column-count:2;
+			 }
+			#artist3{
+				column-count:2;
+			 }
+			     
 		}
-	     @media-screen and (max-width: 600px){
+	     @media screen and (max-width: 600px){
+			h3{
+				text-align: center;
+			 }
+			 #artist1{
+				column-count:1;
+			 }
+			#artist2{
+				column-count:1;
+			 }
+			#artist3{
+				column-count:1;
+			 }
 		}
 
 	#logosmall{
@@ -148,35 +170,35 @@
           <h3><a href="gdartis12.html"> GRAPHIC DESIGN ARTIST #1</a></h3>
           <div id="artist1">
                
-               <img src="gd1.jpg" alt="poster">
-               <img src="gd2.jpg" alt="poster">
-               <img src="gd3.jpg" alt="poster">
-               <img src="gd2.jpg" alt="poster">
-               <img src="gd1.jpg" alt="poster">
-               <img src="gd3.jpg" alt="poster">
+               <img class="gallery" src="gd1.jpg" alt="poster">
+               <img class="gallery" src="gd2.jpg" alt="poster">
+               <img class="gallery" src="gd3.jpg" alt="poster">
+               <img class="gallery" src="gd2.jpg" alt="poster">
+               <img class="gallery" src="gd1.jpg" alt="poster">
+               <img class="gallery" src="gd3.jpg" alt="poster">
           </div><br><br><br>
           
 	  <h3><a href="gdartist2.html"> GRAPHIC DESIGN ARTIST #2</a></h3>
           <div id="artist2">
                
-               <img src="gd1.jpg" alt="poster">
-               <img src="gd3.jpg" alt="poster">
-               <img src="gd1.jpg" alt="poster">
-               <img src="gd2.jpg" alt="poster">
-               <img src="gd3.jpg" alt="poster">
-               <img src="gd2.jpg" alt="poster">
+               <img class="gallery" src="gd1.jpg" alt="poster">
+               <img class="gallery" src="gd3.jpg" alt="poster">
+               <img class="gallery" src="gd1.jpg" alt="poster">
+               <img class="gallery" src="gd2.jpg" alt="poster">
+               <img class="gallery" src="gd3.jpg" alt="poster">
+               <img class="gallery" src="gd2.jpg" alt="poster">
                
           </div><br><br><br>
               
           <h3><a href="gdartist3.html"> GRAPHIC DESIGN ARTIST #3</a></h3>
           <div id="artist3">
                
-               <img src="gd2.jpg" alt="poster">
-               <img src="gd1.jpg" alt="poster">
-               <img src="gd2.jpg" alt="poster">
-               <img src="gd3.jpg" alt="poster">
-               <img src="gd3.jpg" alt="poster">
-               <img src="gd1.jpg" alt="poster">
+               <img class="gallery" src="gd2.jpg" alt="poster">
+               <img class="gallery" src="gd1.jpg" alt="poster">
+               <img class="gallery" src="gd2.jpg" alt="poster">
+               <img class="gallery" src="gd3.jpg" alt="poster">
+               <img class="gallery" src="gd3.jpg" alt="poster">
+               <img class="gallery" src="gd1.jpg" alt="poster">
                
           </div>
 	     
