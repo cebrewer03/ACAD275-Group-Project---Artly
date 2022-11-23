@@ -30,6 +30,17 @@
             #topnav{
                 height: 6%;
             }
+			.icon-bar{
+				display: block;
+				width: 100%;
+				height: 2px;
+				margin: 4px 0px 4px 0px;
+				background-color: #666;
+				opacity: 0;
+			  }
+			.icon-bar:hover{
+				background-color: #000;
+			  }
 
             #about{
                 float: left;
@@ -103,6 +114,9 @@
         	}
 
 	      @media screen and (max-width: 1200px){
+			.icon-bar{
+				opactiy: 1;
+			  }
 			h3{
 				text-align: center;
 			 }
@@ -118,6 +132,9 @@
 			     
 		}
 	     @media screen and (max-width: 600px){
+			.icon-bar{
+				opactiy: 1;
+			 }
 			h3{
 				text-align: center;
 			 }
@@ -152,7 +169,6 @@
      
      <body>
           <div id="topnav">
-
               <div id="about"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlyabout.html">ABOUT</a> </div>
               <div id="graphic"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artly_graphicdesign.html"> GRAPHIC DESIGN</a> </div>
               <div id="photography"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlyphotography.html"> PHOTOGRAPHY</a> </div>
@@ -162,8 +178,12 @@
 	      <div id="faq"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlyfaq.html"> FAQ</a></div>
               <div id="discover"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlydiscover.html"> DISCOVER</a> </div>
               <div id="submit"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlysubmitart.html"> SUBMIT ART</a> </div>
-
           </div>
+	 	  <button type="button" id="hamburgermenu">
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+		 </button>
         
           <h2 id="title">GRAPHIC DESIGN</h2>
           
