@@ -1,6 +1,8 @@
 <html>
      <head>
         <title>ARTLY GRAPHIC DESIGN</title>
+
+		<script src="jquery-3.6.1.min.js"></script>
           
         <style>
             body {
@@ -52,38 +54,32 @@
 				margin-left: 42%;
 			}
             #about{
-                float: left;
-                padding: 2%;
+                padding: 1%;
                 padding-left: 3%;
                 padding-right: 3%;
             }
             #graphic{
-                float: left;
-                padding: 2%;
+                padding: 1%;
                 padding-left: 3%;
                 padding-right: 3%;
             }
             #photography{
-                float: left;
-                padding: 2%;
+                padding: 1%;
                 padding-left: 3%;
                 padding-right: 3%;
             }
             #submit{
-                float: right;
-                padding: 2%;
+                padding: 1%;
                 padding-left: 3%;
                 padding-right: 3%;
             }
             #discover{
-                float: right;
-                padding: 2%;
+                padding: 1%;
                 padding-left: 3%;
                 padding-right: 3%;
             }
             #faq {
-                float: right;
-                padding: 2%;
+                padding: 1%;
                 padding-left: 3%;
                 padding-right: 3%;
             }
@@ -172,6 +168,8 @@
 		<a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlyfinal.html"> 
 			<img id="logosmall" src="artlysmall.png" class="center"> 
 		</a>
+		<img id="menuicon" src="hamburger.png" alt="Hamburger Menu">
+
 		<div id="topnav">
             <div id="about"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlyabout.html">ABOUT</a> </div>
             <div id="graphic"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artly_graphicdesign.html"> GRAPHIC DESIGN</a> </div>
@@ -179,23 +177,18 @@
 			<div id="faq"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlyfaq.html"> FAQ</a></div>
             <div id="discover"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlydiscover.html"> DISCOVER</a> </div>
             <div id="submit"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlysubmitart.html"> SUBMIT ART</a> </div>
-        </div>
+        </div><br><br>
 	    
-      
-<!-- HAMBURGER NAV -->
-	 	<img id="menuicon" src="hamburger.png" alt="Hamburger Menu">
-
 		<script>
-			("#menuicon").click(function(){
-				("#topnav").css("display", "block");
+			$("#menuicon").click(function(){
+				$("#topnav").slideToggle();
 			})
 		</script>
         
-          <h2 id="title">GRAPHIC DESIGN</h2>
+        <h2 id="title">GRAPHIC DESIGN</h2>
           
-          <h3>TALIA LOURKIN</h3>
-          <div id="artist1">
-               
+        <h3>TALIA LOURKIN</h3>
+        <div id="artist1">
                <img class="gallery" src="gd1.jpg" alt="poster">
                <img class="gallery" src="gd2.jpg" alt="poster">
                <img class="gallery" src="gd3.jpg" alt="poster">
@@ -204,16 +197,14 @@
                <img class="gallery" src="gd3.jpg" alt="poster">
           </div><br><br><br>
           
-	  <h3>PETER RIM</h3>
-          <div id="artist2">
-               
+	  	<h3>PETER RIM</h3>
+          	<div id="artist2">
                <img class="gallery" src="gd1.jpg" alt="poster">
                <img class="gallery" src="gd3.jpg" alt="poster">
                <img class="gallery" src="gd1.jpg" alt="poster">
                <img class="gallery" src="gd2.jpg" alt="poster">
                <img class="gallery" src="gd3.jpg" alt="poster">
                <img class="gallery" src="gd2.jpg" alt="poster">
-               
           </div><br><br><br>
               
           <h3>MASON BRIGHTON</h3>
