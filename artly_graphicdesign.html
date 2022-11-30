@@ -1,8 +1,8 @@
 <html>
      <head>
-          <title>ARTLY GRAPHIC DESIGN</title>
+        <title>ARTLY GRAPHIC DESIGN</title>
           
-          <style>
+        <style>
             body {
             	background-color: rgb(255, 255, 255);
             	color: black;
@@ -13,7 +13,7 @@
             	font-family: apfel;
             	src: url(ApfelGrotezk-Regular.otf);
             }  
-	    a:link { 
+	    	a:link { 
             	text-decoration: none; 
             	color: black;
        	    }
@@ -29,33 +29,31 @@
 		  
             #topnav{
                 height: 6%;
+				display: none;
             }
-/* WE ARE GOING TO CREATE A HAMBURGER BAR MENU WHEN THE WINDOW HITS THE 1200PX AND 600PX BREAKPOINTS, WHICH 
-WILL ALSO FIX THE NAVIGATION OVER WHEN THE BROWSER SIZE IS REDUCED. THE START OF THE HAM MENU IS BELOW BUT IT IS IN PROGRESS */
 		  
-	    #hamburgerbar{
-		    -webkit-appearance: none;
-		    background: transparent;
-		    height: 20px;
-		    width: 20px;
-		    float: left;
-		    padding: 2%;
-                padding-left: 3%;
-                padding-right: 3%;
-		    cursor:pointer;
-		  }
-		.icon-bar{
-			display: block;
-			width: 100%;
-			height: 2px;
-			margin: 4px 0px 4px 0px;
-			background-color: #666;
-			opacity: 0;
-				}
-		.icon-bar:hover{
-			background-color: #000;
-			  }
-
+			#hamburgerbar{
+				width: 20px;
+				float: left;
+				padding: 2%;
+				padding-left: 3%;
+				padding-right: 3%;
+				cursor:pointer;
+			}
+			.icon-bar{
+				display: block;
+				width: 100%;
+				height: 2px;
+				margin: 4px 0px 4px 0px;
+				background-color: #666;
+				opacity: 0;
+			}
+			.icon-bar:hover{
+				background-color: #000;
+			}
+			#logosmall{
+				width: 100%;
+			}
             #about{
                 float: left;
                 padding: 2%;
@@ -92,117 +90,104 @@ WILL ALSO FIX THE NAVIGATION OVER WHEN THE BROWSER SIZE IS REDUCED. THE START OF
                 padding-left: 3%;
                 padding-right: 3%;
             }
-             #title{
-                 text-align: center;
-                 height: 20px;
-                 padding-bottom: 20px;
-                 margin-top: 5%;
+            #title{
+                text-align: center;
+                height: 20px;
+                padding-bottom: 20px;
+                margin-top: 5%;
             }
-	    #artist1{
-		column-count: 3;
-		padding-left: 15%;
-		padding-right: 15%;
-		  }
-	    #artist2{
-		column-count: 3;
-		padding-left: 15%;
-		padding-right: 15%;
+	   		#artist1{
+				column-count: 3;
+				padding-left: 15%;
+				padding-right: 15%;
+		  	}
+	    	#artist2{
+				column-count: 3;
+				padding-left: 15%;
+				padding-right: 15%;
             }
-	    #artist3{
-		column-count: 3;
-		padding-left: 15%;
-		padding-right: 15%;
+	    	#artist3{
+				column-count: 3;
+				padding-left: 15%;
+				padding-right: 15%;
             }
-	    .gallery{
-		    width:100%;
-		  }
-	    #copyright{
-		font-size: 8pt;
-		text-align: center;
-            	float: left;
-            	margin-bottom: 5%;
-            	margin-left: 40%;
-            	width: 20%;
-            	margin-right: 40%;
-            	margin-top: 5%;
-        	}
-
-	      @media screen and (max-width: 1200px){
-			.icon-bar{
-				opactiy: 1;
-			  }
-			h3{
+			.gallery{
+				width:100%;
+			}
+			#copyright{
+				font-size: 8pt;
 				text-align: center;
-			 }
-			#artist1{
-				column-count: 2;
-			 }
-			#artist2{
-				column-count:2;
-			 }
-			#artist3{
-				column-count:2;
-			 }
+				float: left;
+				margin-bottom: 5%;
+				margin-left: 40%;
+				width: 20%;
+				margin-right: 40%;
+				margin-top: 5%;
+				}
+
+	     	@media screen and (max-width: 1200px){
+				h3{
+					text-align: center;
+				}
+				#artist1{
+					column-count: 2;
+				}
+				#artist2{
+					column-count:2;
+				}
+				#artist3{
+					column-count:2;
+				}
 			     
-		}
-	     @media screen and (max-width: 600px){
-			.icon-bar{
-				opactiy: 1;
-			 }
-			h3{
-				text-align: center;
-			 }
-			 #artist1{
-				column-count:1;
-			 }
-			#artist2{
-				column-count:1;
-			 }
-			#artist3{
-				column-count:1;
-			 }
-		}
+			}
+			@media screen and (max-width: 600px){
+				h3{
+					text-align: center;
+				}
+				#artist1{
+					column-count:1;
+				}
+				#artist2{
+					column-count:1;
+				}
+				#artist3{
+					column-count:1;
+				}
+			}
+/* 
+			#logo {
+				width: 10%;
+				float: left;
+				margin-top: -0.5%;
+				padding-left: 8%;
+				padding-right: 4%;
 
-	#logosmall{
-            width: 100%;
-           
-        	}
-
-        #logo {
-            width: 10%;
-            float: left;
-            margin-top: -0.5%;
-            padding-left: 8%;
-            padding-right: 4%;
-
-        }
+			} */
      
-</style>
+		</style>
 		    
      </head>
      
      <body>
-          <div id="topnav">
-              <div id="about"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlyabout.html">ABOUT</a> </div>
-              <div id="graphic"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artly_graphicdesign.html"> GRAPHIC DESIGN</a> </div>
-              <div id="photography"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlyphotography.html"> PHOTOGRAPHY</a> </div>
-              <div id="logo">
-            	<a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlyfinal.html" > <img id="logosmall" src="artlysmall.png" class="center"> </a>   
-        	</div>
-	      <div id="faq"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlyfaq.html"> FAQ</a></div>
-              <div id="discover"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlydiscover.html"> DISCOVER</a> </div>
-              <div id="submit"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlysubmitart.html"> SUBMIT ART</a> </div>
-          </div>
-<!-- HAMBURGER NAV IN PROGRESS -->
-	 	<button type="button" id="hamburgermenu">
-			  <span class="icon-bar"></span>
-			  <span class="icon-bar"></span>
-			  <span class="icon-bar"></span>
-		 </button>
+		<a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlyfinal.html"> 
+			<img id="logosmall" src="artlysmall.png" class="center"> 
+		</a>
+		<div id="topnav">
+            <div id="about"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlyabout.html">ABOUT</a> </div>
+            <div id="graphic"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artly_graphicdesign.html"> GRAPHIC DESIGN</a> </div>
+            <div id="photography"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlyphotography.html"> PHOTOGRAPHY</a> </div> 
+			<div id="faq"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlyfaq.html"> FAQ</a></div>
+            <div id="discover"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlydiscover.html"> DISCOVER</a> </div>
+            <div id="submit"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlysubmitart.html"> SUBMIT ART</a> </div>
+        </div>
+	    
+      
+<!-- HAMBURGER NAV -->
+	 	<img src="hamburger.png" alt="Hamburger Menu">
         
           <h2 id="title">GRAPHIC DESIGN</h2>
           
-          <h3><a href="gdartis12.html"> GRAPHIC DESIGN ARTIST #1</a></h3>
+          <h3>TALIA LOURKIN</h3>
           <div id="artist1">
                
                <img class="gallery" src="gd1.jpg" alt="poster">
@@ -213,7 +198,7 @@ WILL ALSO FIX THE NAVIGATION OVER WHEN THE BROWSER SIZE IS REDUCED. THE START OF
                <img class="gallery" src="gd3.jpg" alt="poster">
           </div><br><br><br>
           
-	  <h3><a href="gdartist2.html"> GRAPHIC DESIGN ARTIST #2</a></h3>
+	  <h3>PETER RIM</h3>
           <div id="artist2">
                
                <img class="gallery" src="gd1.jpg" alt="poster">
@@ -225,7 +210,7 @@ WILL ALSO FIX THE NAVIGATION OVER WHEN THE BROWSER SIZE IS REDUCED. THE START OF
                
           </div><br><br><br>
               
-          <h3><a href="gdartist3.html"> GRAPHIC DESIGN ARTIST #3</a></h3>
+          <h3>MASON BRIGHTON</h3>
           <div id="artist3">
                
                <img class="gallery" src="gd2.jpg" alt="poster">
