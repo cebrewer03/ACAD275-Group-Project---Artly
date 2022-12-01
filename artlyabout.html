@@ -1,7 +1,7 @@
 <html>
  <head>
-      
-    <br/>
+    <meta charset="utf-8">
+    <script src="jquery-3.6.1.min.js"></script>
 
      <title>ABOUT US</title>
       <style>
@@ -41,8 +41,6 @@
             margin-right: 10%;
             height: 90%;
             margin-bottom: 10%;
-
-
         }
 
         #artlyword {
@@ -56,48 +54,57 @@
         }
 
         #topnav{
-           height: 6%;
-        }
+                height: 6%;
+				display: none;
+				margin-bottom: 3%;
+            }
+			#topnav a{
+				display: block;
+				text-align: center;
+			}
+			#menuicon{
+				width: 50px;
+				float: right;
+				padding-top: 2%;
+				padding-right: 2%;
+				cursor:pointer;
+			}
+			#menuicon:hover{
+				opacity: .7;
+			}
 
-        #about{
-            float: left;
-            padding: 2%;
-            padding-left: 3%;
-            padding-right: 3%;
-        }
-
-        #graphic{
-            float: left;
-            padding: 2%;
-            padding-left: 3%;
-            padding-right: 3%;
-        }
-
-        #photography{
-            float: left;
-            padding: 2%;
-            padding-left: 3%;
-            padding-right: 3%;
-        }
-
-        #submit{
-            float: right;
-            padding: 2%;
-            padding-left: 3%;
-            padding-right: 3%;
-        }
-        #discover{
-            float: right;
-            padding: 2%;
-            padding-left: 3%;
-            padding-right: 3%;
-        }
-        #faq {
-            float: right;
-            padding: 2%;
-            padding-left: 3%;
-            padding-right: 3%;
-        }
+			#logosmall{
+				width: 16%;
+				padding-top: 2%;
+				margin-left: 42%;
+			}
+            #about{
+                padding: 1%;
+            }
+            #graphic{
+                padding: 1%;
+            }
+            #photography{
+                padding: 1%;
+            }
+            #submit{
+                padding: 1%;
+            }
+            #discover{
+                padding: 1%;
+            }
+            #faq {
+                padding: 1%;
+            }
+            #title{
+                text-align: center;
+                font-size: 22pt;
+                padding-bottom: 20px;
+                margin-top: 5%;
+            }
+			h3{
+				font-size: 16pt;
+			}
 
         #artlypic {
             width: 40%;
@@ -118,27 +125,12 @@
             margin-right: 40%;
             margin-top: 5%;
         }
-        
-        #logosmall{
-            width: 100%;
-           
-        }
-
-        #logo {
-            width: 10%;
-            float: left;
-            margin-top: -0.5%;
-            padding-left: 8%;
-            padding-right: 4%;
-
-        }
 
         #alvarobox{
             float: left;
             width: 30%;
             margin-left: 4%;
             margin-right: 0%;
-           
             clear: both;
         }
 
@@ -261,19 +253,25 @@
 
  <body>
 
+    <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlyfinal.html"> 
+        <img id="logosmall" src="artlysmall.png" class="center"> 
+    </a>
+    <img id="menuicon" src="hamburger.png" alt="Hamburger Menu">
+
     <div id="topnav">
-
-        <div id="about"> <a href="http://link.here.the.page.com">ABOUT</a> </div>
-        <div id="graphic"> <a href="http://link.here.the.page.com"> GRAPHIC DESIGN</a> </div>
-        <div id="photography"> <a href="http://link.here.the.page.com"> PHOTOGRAPHY</a> </div>
-        <div id="logo">
-            <a href="http://link.here.the.page.com" > <img id="logosmall" src="artlysmall.png" class="center"> </a>   
-        </div>
-        <div id="faq"> <a href="http://link.here.the.page.com"> FAQ</a></div>
-        <div id="discover"> <a href="http://link.here.the.page.com"> DISCOVER</a> </div>
-        <div id="submit"> <a href="http://link.here.the.page.com"> SUBMIT ART</a> </div>
-
-    </div>
+        <div id="about"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlyabout.html">ABOUT</a> </div>
+        <div id="graphic"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artly_graphicdesign.html"> GRAPHIC DESIGN</a> </div>
+        <div id="photography"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlyphotography.html"> PHOTOGRAPHY</a> </div> 
+        <div id="faq"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlyfaq.html"> FAQ</a></div>
+        <div id="discover"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlydiscover.html"> DISCOVER</a> </div>
+        <div id="submit"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlysubmitart.html"> SUBMIT ART</a> </div>
+    </div><br><br><br><br><br><br><br><br>
+    
+    <script>
+        $("#menuicon").click(function(){
+            $("#topnav").slideToggle();
+        })
+    </script>
 
     <div id="outercontainer">
         
@@ -329,7 +327,7 @@
                         Lead Designer
                     </div>
                     <div id="jadeskills">
-                        Developing / Web Design / Java Script
+                        Developing / Web Design / JavaScript
                     </div>
                 </div>
     
@@ -337,7 +335,7 @@
 
             <div id="camrynbox">
 
-                <img id="camryn" class="expand" src="camryn.jpeg"></a>
+                <img id="camryn" class="expand" src="camryn.jpg"></a>
     
                 <div id="textcamrynbox">
                     <div id="camrynname">
@@ -347,7 +345,7 @@
                         Brand Specialist
                     </div>
                     <div id="camrynskills">
-                        Branding / Javascript / CSS
+                        Branding / JavaScript / CSS
                     </div>
                 </div>
     

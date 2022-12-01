@@ -1,115 +1,220 @@
 <html>
      <head>
-          <title>ARTLY GRAPHIC DESIGN</title>
+        <title>ARTLY GRAPHIC DESIGN</title>
+
+		<script src="jquery-3.6.1.min.js"></script>
           
-          <style>
+        <style>
             body {
             	background-color: rgb(255, 255, 255);
             	color: black;
             	font-family: apfel;
         	  }  
 			
-        	  @font-face {
+            @font-face {
             	font-family: apfel;
             	src: url(ApfelGrotezk-Regular.otf);
             }  
-			
+	    	a:link { 
+            	text-decoration: none; 
+            	color: black;
+       	    }
+		  
+            a:visited { 
+            	text-decoration: none;
+            	color: black; 
+            }
+		  
+            a:active { 
+            	text-decoration: none; 
+            }
+		  
             #topnav{
                 height: 6%;
+				display: none;
+				margin-bottom: 3%;
             }
+			#topnav a{
+				display: block;
+				text-align: center;
+			}
+			#menuicon{
+				width: 50px;
+				float: right;
+				padding-top: 2%;
+				padding-right: 2%;
+				cursor:pointer;
+			}
+			#menuicon:hover{
+				opacity: .7;
+			}
 
+			#logosmall{
+				width: 16%;
+				padding-top: 2%;
+				margin-left: 42%;
+			}
             #about{
-                float: left;
-                padding: 2%;
-                padding-left: 3%;
-                padding-right: 3%;
+                padding: 1%;
             }
             #graphic{
-                float: left;
-                padding: 2%;
-                padding-left: 3%;
-                padding-right: 3%;
+                padding: 1%;
             }
             #photography{
-                float: left;
-                padding: 2%;
-                padding-left: 3%;
-                padding-right: 3%;
+                padding: 1%;
             }
             #submit{
-                float: right;
-                padding: 2%;
-                padding-left: 3%;
-                padding-right: 3%;
+                padding: 1%;
             }
             #discover{
-                float: right;
-                padding: 2%;
-                padding-left: 3%;
-                padding-right: 3%;
+                padding: 1%;
             }
             #faq {
-                float: right;
-                padding: 2%;
-                padding-left: 3%;
-                padding-right: 3%;
+                padding: 1%;
             }
-             #title{
-                 text-align: center;
-                 height: 20px;
-                 padding-bottom: 20px;
-                 margin-top: 5%;
+            #title{
+                text-align: center;
+                font-size: 22pt;
+                padding-bottom: 20px;
+                margin-top: 5%;
             }
+			h3{
+				font-size: 16pt;
+			}
+	   		#artist1{
+				column-count: 3;
+				padding-left: 15%;
+				padding-right: 15%;
+		  	}
+	    	#artist2{
+				column-count: 3;
+				padding-left: 15%;
+				padding-right: 15%;
+            }
+	    	#artist3{
+				column-count: 3;
+				padding-left: 15%;
+				padding-right: 15%;
+            }
+			.gallery{
+				width:100%;
+			}
+			#copyright{
+				font-size: 8pt;
+				text-align: center;
+				float: left;
+				margin-bottom: 5%;
+				margin-left: 40%;
+				width: 20%;
+				margin-right: 40%;
+				margin-top: 5%;
+				}
+
+	     	@media screen and (max-width: 1200px){
+				h3{
+					text-align: center;
+				}
+				#artist1{
+					column-count: 2;
+				}
+				#artist2{
+					column-count:2;
+				}
+				#artist3{
+					column-count:2;
+				}
+			     
+			}
+			@media screen and (max-width: 600px){
+				h3{
+					text-align: center;
+				}
+				#artist1{
+					column-count:1;
+				}
+				#artist2{
+					column-count:1;
+				}
+				#artist3{
+					column-count:1;
+				}
+			}
+
+     
+		</style>
+		    
      </head>
      
      <body>
-          <div id="topnav">
+		<a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlyfinal.html"> 
+			<img id="logosmall" src="artlysmall.png" class="center"> 
+		</a>
+		<img id="menuicon" src="hamburger.png" alt="Hamburger Menu">
 
-              <div id="about"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlyabout.html">ABOUT</a> </div>
-              <div id="graphic"> <a href="http://link.here.the.page.com"> GRAPHIC DESIGN</a> </div>
-              <div id="photography"> <a href="http://link.here.the.page.com"> PHOTOGRAPHY</a> </div>
-              <div id="faq"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlyfaq.html"> FAQ</a></div>
-              <div id="discover"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlydiscover.html"> DISCOVER</a> </div>
-              <div id="submit"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlysubmit.html"> SUBMIT ART</a> </div>
-
-          </div>
+		<div id="topnav">
+            <div id="about"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlyabout.html">ABOUT</a> </div>
+            <div id="graphic"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artly_graphicdesign.html"> GRAPHIC DESIGN</a> </div>
+            <div id="photography"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlyphotography.html"> PHOTOGRAPHY</a> </div> 
+			<div id="faq"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlyfaq.html"> FAQ</a></div>
+            <div id="discover"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlydiscover.html"> DISCOVER</a> </div>
+            <div id="submit"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlysubmitart.html"> SUBMIT ART</a> </div>
+        </div><br><br><br><br><br><br><br><br>
+	    
+		<script>
+			$("#menuicon").click(function(){
+				$("#topnav").slideToggle();
+			})
+		</script>
         
-          <h2 id="title">GRAPHIC DESIGN</h2>
+        <h2 id="title">GRAPHIC DESIGN</h2>
           
-          <h3>ARTIST NAME</h3>
-          <div id="artist1">
-               
-               <img src="gd1.jpg" alt="poster">
-               <img src="gd2.jpg" alt="poster">
-               <img src="gd3.jpg" alt="poster">
-               <img src="gd2.jpg" alt="poster">
-               <img src="gd1.jpg" alt="poster">
-               <img src="gd3.jpg" alt="poster">
-          </div>
+        <h3>TALIA LOURKIN</h3>
+		<h4>Contact Info</h4>
+		tlourkin@gmail.com<br>
+		578-289-0897
+		<br><br>
+        <div id="artist1">
+               <img class="gallery" src="gd1.jpg" alt="poster">
+               <img class="gallery" src="gd2.jpg" alt="poster">
+               <img class="gallery" src="gd3.jpg" alt="poster">
+               <img class="gallery" src="talia4.jpg" alt="poster">
+               <img class="gallery" src="talia5.png" alt="poster">
+               <img class="gallery" src="talia6.jpg" alt="poster">
+          </div><br><br><br>
           
-          <h3>ARTIST NAME</h3>
-          <div id="artist2">
-               
-               <img src="gd1.jpg" alt="poster">
-               <img src="gd3.jpg" alt="poster">
-               <img src="gd1.jpg" alt="poster">
-               <img src="gd2.jpg" alt="poster">
-               <img src="gd3.jpg" alt="poster">
-               <img src="gd2.jpg" alt="poster">
-               
-          </div>
+	  	<h3>PETER RIM</h3>
+		<h4>Contact Info</h4>
+		prim09@gmail.com<br>
+		397-280-1345
+		<br><br>
+          	<div id="artist2">
+               <img class="gallery" src="peter1.png" alt="poster">
+               <img class="gallery" src="peter2.jpg" alt="poster">
+               <img class="gallery" src="peter3.jpg" alt="poster">
+               <img class="gallery" src="peter4.jpg" alt="poster">
+               <img class="gallery" src="peter5.jpg" alt="poster">
+               <img class="gallery" src="peter6.jpg" alt="poster">
+          </div><br><br><br>
               
-          <h3>ARTIST NAME</h3>
+          <h3>MASON BRIGHTON</h3>
+		  <h4>Contact Info</h4>
+		  mbrighton@gmail.com<br>
+		  497-689-2878
+		  <br><br>
           <div id="artist3">
                
-               <img src="gd2.jpg" alt="poster">
-               <img src="gd1.jpg" alt="poster">
-               <img src="gd2.jpg" alt="poster">
-               <img src="gd3.jpg" alt="poster">
-               <img src="gd3.jpg" alt="poster">
-               <img src="gd1.jpg" alt="poster">
+               <img class="gallery" src="mason1.jpg" alt="poster">
+               <img class="gallery" src="mason2.jpg" alt="poster">
+               <img class="gallery" src="mason3.png" alt="poster">
+               <img class="gallery" src="mason4.jpg" alt="poster">
+               <img class="gallery" src="mason5.png" alt="poster">
+               <img class="gallery" src="mason6.jpg" alt="poster">
                
           </div>
+	     
+	  <div id="copyright">
+        	ARTLY Copyright 2022
+   	  </div>
               
      </body>
 </html>
