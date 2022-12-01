@@ -1,6 +1,7 @@
 <html>
      <head>
           <title>ARTLY PHOTOGRAPHY</title>
+          <script src="jquery-3.6.1.min.js"></script>
           
           <style>
             body {
@@ -151,19 +152,24 @@
      </head>
      
      <body>
-          <div id="topnav">
-
-              <div id="about"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlyabout.html">ABOUT</a> </div>
-              <div id="graphic"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artly_graphicdesign.html"> GRAPHIC DESIGN</a> </div>
-              <div id="photography"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlyphotography.html"> PHOTOGRAPHY</a> </div>
-              <div id="logo">
-            	<a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlyfinal.html" > <img id="logosmall" src="artlysmall.png" class="center"> </a>   
-              </div>
-	      <div id="faq"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlyfaq.html"> FAQ</a></div>
-              <div id="discover"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlydiscover.html"> DISCOVER</a> </div>
-              <div id="submit"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlysubmitart.html"> SUBMIT ART</a> </div>
-
-          </div>
+        <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlyfinal.html"> 
+            <img id="logosmall" src="artlysmall.png" class="center"> 
+        </a>
+        <img id="menuicon" src="hamburger.png" alt="Hamburger Menu">
+    
+        <div id="topnav">
+            <div id="about"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlyabout.html">ABOUT</a> </div>
+            <div id="graphic"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artly_graphicdesign.html"> GRAPHIC DESIGN</a> </div>
+            <div id="photography"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlyphotography.html"> PHOTOGRAPHY</a> </div> 
+            <div id="faq"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlyfaq.html"> FAQ</a></div>
+            <div id="discover"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlydiscover.html"> DISCOVER</a> </div>
+            <div id="submit"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlysubmitart.html"> SUBMIT ART</a> </div>
+        </div><br><br><br><br><br><br><br><br>
+        <script>
+            $("#menuicon").click(function(){
+                $("#topnav").slideToggle();
+            })
+        </script>
         
           <h2 id="title">PHOTOGRAPHY</h2>
           
