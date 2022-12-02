@@ -1,0 +1,254 @@
+<html>
+ <head>
+    <br/>
+
+     <title>ARTLY FAVORITES</title>
+
+      <style>
+
+
+        body {
+            background-color: rgb(255, 255, 255);
+            color: black;
+            font-family: apfel;
+        }    
+        @font-face {
+            font-family: apfel;
+            src: url(ApfelGrotezk-Regular.otf);
+        }   
+        a:link { 
+            text-decoration: none; 
+            color: black;
+        }
+        a:visited { 
+            text-decoration: none;
+            color: black; 
+        }
+        a:active { 
+            text-decoration: none; 
+        }
+
+        #topnav{
+           height: 6%;
+        }
+
+        #about{
+            float: left;
+            padding: 2%;
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+        #graphic{
+            float: left;
+            padding: 2%;
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+        #photography{
+            float: left;
+            padding: 2%;
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+        #submit{
+            float: right;
+            padding: 2%;
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+        #discover{
+            float: right;
+            padding: 2%;
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+        #faq {
+            float: right;
+            padding: 2%;
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+        #artlyimage{
+            background-image: url('artlybig.png');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            height: 100%;
+        }
+        #description {
+            float: left;
+            margin-left: 30%;
+            margin-right: 30%;
+            margin-top: -5%;
+            width: 40%;
+            height: 30%;
+            text-align: center;
+        }
+        #explorebutton{
+            font-size: 17pt;
+            margin-top: 8%;
+            color: rgb(65, 65, 231);
+            text-decoration: underline;
+
+        }
+        #copyright{
+            font-size: 8pt;
+            text-align: center;
+            float: left;
+            margin-bottom: 5%;
+            margin-left: 40%;
+            width: 20%;
+            margin-right: 40%;
+            margin-top: 5%;
+        }
+
+        #title{
+            text-align: center;
+            height: 20px;
+            padding-bottom: 20px;
+            margin-top: 5%;
+        }
+        #p{
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            max-width: 100%;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        img {
+            width: 25%;
+            /* object-fit: cover;
+            object-position: bottom; */
+        }
+        
+        /* .expand {
+            width: 85%;
+            transition-property: width;
+            transition-duration: 0.5s;
+            transition-timing-function: ease;
+            transition-delay: 0s;
+        }
+        .expand:hover{
+            width: 85%;
+        } */
+/* 
+        .name{
+            font-size: 12pt;
+            width: 60%;
+            margin-bottom: 5%;
+        } */
+
+        @media screen and (max-width: 800px) {
+            .box {
+            flex: 49%;
+            max-width: 49%;
+            margin: auto;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .box {
+            flex: 100%;
+            max-width: 100%;
+            margin: auto;
+            }
+        }
+        .box{
+            text-align: center;
+            width: 25%;
+            padding: 5px;
+        }
+        .box img{
+            width: 100%;
+        }
+        #search{
+            display: flex;
+            justify-content: center;
+        }
+      </style>  
+
+ </head>
+
+ <body>
+
+    <div id="topnav">
+
+        <div id="about"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlyabout.html">ABOUT</a> </div>
+        <div id="graphic"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artly_graphicdesign.html"> GRAPHIC DESIGN</a> </div>
+        <div id="photography"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlyphotography.html"> PHOTOGRAPHY</a> </div>
+        <div id="logo">
+            <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlyfinal.html" > <img id="logosmall" src="artlysmall.png" class="center"> </a>   
+        </div>
+	    <div id="faq"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlyfaq.html"> FAQ</a></div>
+        <div id="discover"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlydiscover.html"> DISCOVER</a> </div>
+        <div id="submit"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlysubmitart.html"> SUBMIT ART</a> </div>
+
+    </div>
+
+
+        <div>
+            <h2 id="title">FAVORITES</h2>
+            <p id="p">Catalog of your favorites.</p>
+        </div>
+
+
+        <div class="container">
+            <!-- <figure class="box" data-title="waterlilies" id ="one">
+                <img class="expand" id="1" src="https://www.artic.edu/iiif/2/3c27b499-af56-f0d5-93b5-a7f2f1ad5813/full/843,/0/default.jpg">
+                <figcaption>WATERLILIES</figcaption>
+            </figure>
+
+
+            <figure class="box" data-title="ocean" id="two">
+                <img class="expand" id="2" src="https://theartwolf.com/wp-content/uploads/2007/07/Claude_Monet_-_La_Manneporte_Etretat_-_1883_-_detail-960x800.jpg">
+                <figcaption>OCEAN</figcaption>
+            </figure>
+
+            <figure class="box" data-title="flowers" id = "three">
+                <img class="expand" id="3" src="https://cdn.shopify.com/s/files/1/1595/8961/products/sf_scarf612rev_4682036d-67a5-4aff-8c36-a025d85af50d.jpg?v=1528137698">
+                <figcaption>FLOWERS</figcaption>
+            </figure> -->
+
+            
+
+            <!-- <figure class="box">
+                <img class="expand" src="https://www.artic.edu/iiif/2/3c27b499-af56-f0d5-93b5-a7f2f1ad5813/full/843,/0/default.jpg">
+                <figcaption>INSERT TITLE</figcaption>
+            </figure>
+
+            <figure class="box">
+                <img class="expand" src="https://www.artic.edu/iiif/2/3c27b499-af56-f0d5-93b5-a7f2f1ad5813/full/843,/0/default.jpg">
+                <figcaption>INSERT TITLE</figcaption>
+            </figure>
+
+            <figure class="box">
+                <img class="expand" src="https://www.artic.edu/iiif/2/3c27b499-af56-f0d5-93b5-a7f2f1ad5813/full/843,/0/default.jpg">
+                <figcaption>INSERT TITLE</figcaption>
+            </figure>
+            
+            <figure class="box">
+                <img class="expand" src="https://www.artic.edu/iiif/2/3c27b499-af56-f0d5-93b5-a7f2f1ad5813/full/843,/0/default.jpg">
+                <figcaption>INSERT TITLE</figcaption>
+            </figure>
+
+            <figure class="box">
+                <img class="expand" src="https://www.artic.edu/iiif/2/3c27b499-af56-f0d5-93b5-a7f2f1ad5813/full/843,/0/default.jpg">
+                <figcaption>INSERT TITLE</figcaption>
+            </figure>
+
+            <figure class="box">
+                <img class="expand" src="https://www.artic.edu/iiif/2/3c27b499-af56-f0d5-93b5-a7f2f1ad5813/full/843,/0/default.jpg">
+                <figcaption>INSERT TITLE</figcaption>
+            </figure>  -->
+        </div>
+
+
+    <div id="copyright">
+        ARTLY Copyright 2022
+    </div>
+
+    <script src="jquery-3.6.1.min.js"></script>
+    <script src="discoverjs.js"></script>
+ </body>
+</html>
