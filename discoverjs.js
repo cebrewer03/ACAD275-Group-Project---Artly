@@ -94,7 +94,7 @@ $(document).ready(function() {
             var container = $(".container"); 
             var input = $("#input").val();
             for(var i=0; i<metadata.length; i++){
-                if(input == "" || metadata[i].title.toLowercase() == input || metadata[i].medium.toLowercase() == input || metadata[i].color.toLowercase() == input || metadata[i].artist.toLowercase() == input)
+                if(input == "" || metadata[i].title.toLowerCase() == input || metadata[i].medium == input || metadata[i].color == input || metadata[i].artist == input)
                 {
                     $(".container #" + i).show();
                 } else {
