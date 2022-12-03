@@ -11,10 +11,10 @@ class Art{
 
 var metadata = [];
 metadata.push(new Art("STATUES", "photography", "blue", "cooper", "cooper1.jpg"));
-metadata.push(new Art("SUNDOWN", "photography", "orange", "cooper", "cooper2.jpg");
-metadata.push(new Art("CITY HALL", "photography", "grey", "cooper", "cooper3.jpg");
-metadata.push(new Art("SUMMER BIKES", "photography", "brown", "cooper", "cooper4.jpg");
-metadata.push(new Art("326", "photography", "orange", "cooper", "cooper5.jpg");
+metadata.push(new Art("SUNDOWN", "photography", "orange", "cooper", "cooper2.jpg"));
+metadata.push(new Art("CITY HALL", "photography", "grey", "cooper", "cooper3.jpg"));
+metadata.push(new Art("SUMMER BIKES", "photography", "brown", "cooper", "cooper4.jpg"));
+metadata.push(new Art("326", "photography", "orange", "cooper", "cooper5.jpg"));
 
 metadata.push(new Art("FLOWERS", "acrylic", "yellow", "gogh", "https://cdn.shopify.com/s/files/1/1595/8961/products/sf_scarf612rev_4682036d-67a5-4aff-8c36-a025d85af50d.jpg?v=1528137698"));
 metadata.push(new Art("CLIFFS", "acrylic", "yellow", "monet", "https://uploads1.wikiart.org/images/claude-monet/cliff-at-grainval.jpg!Large.jpg"));
