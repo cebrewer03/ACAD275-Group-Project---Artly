@@ -224,11 +224,12 @@
     </div> -->
 
     <div id="artlyimage">
-        <!-- <script>
+        <script>
             function changeColor(){
                 var logoChoice = localStorage.getItem("choice");
 
                 for(var i=0; i<logoChoice.length; i++){
+                    var checked = "";
                     if()
                 }
             
@@ -236,7 +237,7 @@
                     $("#artlyimage").attr("src", logoChoice);
                 });
             }
-        </script> -->
+        </script>
     </div>
 
     <div id="description">
@@ -245,13 +246,14 @@
 
         <div id="explorebutton">
             <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artly_discover.html"> EXPLORE</a>
-        </div>
+        </div><br>
 
         <div id="pickcolor">
-            <input type="checkbox" value="blue">Cobalt Blue
-            <input type="checkbox" value="green">Olive Green
-            <input type="checkbox" value="yellow">Golden Yellow
-            <input type="button" id="#colorbutton" value="Click Me!">
+            <em>Want to make the Artly logo your own?</em><br><br>
+            <input type="radio" value="blue">Cobalt Blue
+            <input type="radio" value="green">Olive Green
+            <input type="radio" value="yellow">Golden Yellow<br><br>
+            <input type="button" id="#colorbutton" value="Click Me!" style="cursor:pointer">
         </div>
 
     </div>
