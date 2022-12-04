@@ -2,7 +2,9 @@
  <head>
     <br/>
 
-     <title>ARTLY</title>
+     <title>ARTLY FINAL TEST</title>
+     <script src="jquery-3.6.1.min.js"></script>
+
       <style>
 
         body {
@@ -212,7 +214,6 @@
   
   
 <!--     <div id="topnav">
-
         <div id="about"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlyabout.html">ABOUT</a> </div>
         <div id="graphic"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artly_graphicdesign.html"> GRAPHIC DESIGN</a> </div>
         <div id="photography"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlyphotography.html"> PHOTOGRAPHY</a> </div>
@@ -220,25 +221,58 @@
         <div id="discover"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlydiscover.html"> DISCOVER</a> </div>
         <div id="discover"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artly_favorites.html"> DISCOVER</a> </div>
         <div id="submit"> <a href="https://webdev.iyaclasses.com/~jfranson/acad275/artlysubmitart.html"> SUBMIT ART</a> </div>
-
     </div> -->
 
     <div id="artlyimage">
-        <script>
-            function changeColor(){
-                var logoChoice = localStorage.getItem("choice");
-
-                for(var i=0; i<logoChoice.length; i++){
-                    var checked = "";
-                    if()
-                }
-            
-                $("#colorbutton").click(function(){
-                    $("#artlyimage").attr("src", logoChoice);
-                });
-            }
-        </script>
     </div>
+
+        <script>
+            function loadColorChoice () {
+                var savedcolor = localStorage.getItem("color");
+                var colorchoice = document.querySelectorAll(".colorchoice");
+                    for(i=0; i<colorchoice.length; i++)
+                    {
+                        if(colorchoice[i].value == savedcolor)
+                        {
+                            var url = "url(artly" + savedcolor + ".png)";
+                            $("#artlyimage").css("background-image", url);
+                            colorchoice[i].checked = true;
+                        }
+                }
+            }
+
+            $(document).ready(function() {
+
+                loadColorChoice();
+
+                $("#colorbutton").click(function(){
+                    var colorchoice = document.querySelectorAll(".colorchoice");
+                    for(i=0; i<colorchoice.length; i++)
+                    {
+                        if(colorchoice[i].checked)
+                        {
+                            var url = "url(artly" + colorchoice[i].value + ".png)";
+                            $("#artlyimage").css("background-image", url);
+                            localStorage.setItem("color", colorchoice[i].value);
+                        }
+                    }
+                });
+            });
+
+            // function changeColor(){
+            //     var logoChoice = localStorage.getItem("choice");
+
+            //     for(var i=0; i<logoChoice.length; i++){
+            //         var checked = "";
+            //         if()
+            //     }
+            
+            //     $("#colorbutton").click(function(){
+            //         $("#artlyimage").attr("src", logoChoice);
+            //     });
+            // }
+        </script>
+
 
     <div id="description">
         Artly is a virtual showroom for USC-based artists looking to collaborate with fellow students. We are a new
@@ -250,10 +284,10 @@
 
         <div id="pickcolor">
             <em>Want to make the Artly logo your own?</em><br><br>
-            <input type="radio" value="blue">Cobalt Blue
-            <input type="radio" value="green">Olive Green
-            <input type="radio" value="yellow">Golden Yellow<br><br>
-            <input type="button" id="#colorbutton" value="Click Me!" style="cursor:pointer">
+            <input class="colorchoice" type="radio" value="blue" name="color">Cobalt Blue
+            <input class="colorchoice" type="radio" value="green" name="color">Olive Green
+            <input class="colorchoice" type="radio" value="big" name="color">Golden Yellow<br><br>
+            <input type="button" id="colorbutton" value="Click Me!" style="cursor:pointer">
         </div>
 
     </div>
@@ -261,6 +295,7 @@
     <div id="copyright">
         ARTLY Copyright 2022
     </div>
+
 
  </body>
 
