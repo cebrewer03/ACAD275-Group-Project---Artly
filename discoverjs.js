@@ -92,7 +92,7 @@ function favoriteImages() {
             if(i.toString() == favArray[j])
             {
                 checked = "checked";
-                container.append("<figure class='box' id='" + i + "'> <figcaption>" + metadata[i].title + "</figcaption> <img class='expand' src='" + metadata[i].url + "'> <figcaption> Artist: " + metadata[i].artist + "</figcaption> <input class='fav' " + checked + " type='checkbox'> </figure>");   
+                container.append("<figure class='box' id='" + i + "'> <figcaption>" + metadata[i].title + "</figcaption> <img class='expand' src='" + metadata[i].url + "'> <figcaption> Artist: " + metadata[i].artist + "</figcaption>");   
                 break;
             }
         }
